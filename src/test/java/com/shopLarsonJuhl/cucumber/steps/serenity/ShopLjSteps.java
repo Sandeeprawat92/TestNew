@@ -5,7 +5,6 @@ import com.shopLarsonJuhl.pages.HomePage;
 import com.shopLarsonJuhl.pages.LoginPage;
 import com.shopLarsonJuhl.pages.SearchResultPage;
 
- 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -20,17 +19,18 @@ public class ShopLjSteps extends ScenarioSteps {
 
 	/* base page steps */
 
-	@Step("Enter the url to the browser and press enter user redirects to homepage")
+	// @Step("Enter the url to the browser and press enter user redirects to
+	// homepage")
 	public LoginPage navigateToTheWebsite() {
 		return basePage.navigateToTheWebsite();
 	}
 
-	@Step("Enter the login details email id and password to the website")
+	// @Step("Enter the login details email id and password to the website")
 	public HomePage LoginToTheWebsite(String email, String password) {
 		return loginPage.LoginToTheWebsite(email, password);
 	}
 
-	@Step("Enter the product sku to the search field and press enter button")
+	// @Step("Enter the product sku to the search field and press enter button")
 	public SearchResultPage enterSearchText(String value) {
 		return basePage.enterSearchText(value);
 	}
