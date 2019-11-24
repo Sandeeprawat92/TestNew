@@ -1,0 +1,5 @@
+Feature: user sign in to the shoplarson website.
+
+Scenario: As a current customer of shoplj, I need to login to the shopLarsonjuhl.com.
+
+Given: Open the website shoplarsonjuhl.com
